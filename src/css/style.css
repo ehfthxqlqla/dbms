@@ -1,0 +1,231 @@
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; } 
+@keyframes rainbowLink {     
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; } 
+    100% { color: #e82aff; }
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loading {
+    text-align: center;
+    width: 350px;
+    height: 125px;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-top: 25px;
+}
+
+#loading-span {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 36px;
+}
+
+.loading-prog::-webkit-progress-bar {
+    display: block;
+    background-color: chartreuse;
+    color: chartreuse;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.loading-prog {
+    width: 70%;
+    height: 20%;
+}
+
+#tutorial {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 450px;
+    height: 600px;
+    background-color: #a0a0a0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: none;
+}
+
+#tutorial li {
+    margin-top: 45px;
+    margin-left: 6px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+#tutorial li:hover {
+    animation-duration: 5s;
+    animation-name: rainbowLink;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 19px #fff, 0 0 40px rgb(247, 247, 247),
+    0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247);
+    transform: translateX(25px);
+    transition: .5s;
+    list-style-type: decimal;
+}
+
+@keyframes rainbowLink {     
+    0% { color: #ff2a2a; }
+    15% { color: #ff7a2a; }
+    30% { color: #ffc52a; }
+    45% { color: #43ff2a; }
+    60% { color: #2a89ff; }
+    75% { color: #202082; }
+    90% { color: #6b2aff; } 
+    100% { color: #e82aff; }
+}
+
+.title {
+    text-align: center;
+    color: #757575;
+    animation-duration: 3s;
+    animation-name: glowTitle;
+    animation-iteration-count: infinite;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 35px;
+    user-select: none;
+}
+
+@keyframes glowTitle {
+    0% { text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 19px #fff, 0 0 40px rgb(247, 247, 247),
+        0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247); }
+        
+    30% { text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 9px #fff, 0 0 20px rgb(247, 247, 247),
+        0 0 30px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 60px rgb(247, 247, 247), 0 0 75px rgb(247, 247, 247); }
+
+    50% { text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 10px rgb(247, 247, 247),
+        0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247); } /* 얘가 가장 글로우가 희미할때 */
+
+    70% { text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 9px #fff, 0 0 20px rgb(247, 247, 247),
+        0 0 30px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 60px rgb(247, 247, 247), 0 0 75px rgb(247, 247, 247); }
+
+    100% { text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 19px #fff, 0 0 40px rgb(247, 247, 247),
+        0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247); }
+}
+
+#copyright {
+    color: #000;
+    font-size: 20px;
+}
+
+.wifi-popup {
+    display: none;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-left: 10px;
+    width: 325px;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    top: 280px;
+    left: 60px;
+}
+
+.wifi-id-pw {
+    width: 80px;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 100%;
+}
+
+#school-wifi {
+    position: relative;
+}
+
+.copy-text {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.copied {
+    user-select: none;
+    position: absolute;
+    color: #000;
+    font-size: 13px;
+    /* text-shadow: -0.5px 0 #000, 0 0.5px #000, 0.5px 0 #000, 0 -0.5px #000; */
+    box-sizing: border-box;
+    /* border: 1px solid #fff; */
+    border-radius: 5px;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    background: rgb(148, 235, 61);
+}
+
+#copy1 {
+    top: 4px;
+    left: 110px;
+}
+
+#copy2 {
+    top: 26px;
+    left: 115px;
+}
+
+.xbutton {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+.email-popup {
+    display: none;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-left: 10px;
+    width: 325px;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    top: 350px;
+    left: 60px;
+}
+
+.email-id-pw {
+    position: absolute;
+    top: 280px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.xbutton1 {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}

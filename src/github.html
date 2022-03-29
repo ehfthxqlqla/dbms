@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+    <script>
+        setTimeout(() => {
+            setTimeout(() => {
+                location.href = "https://github.com/ehfthxqlqla/dongbums"
+            }, 500);
+            
+            const span = document.querySelector(".r")
+            span.innerHTML = '<span class="r">Redirected!</span>'
+
+        }, 2000);
+    </script>
+</head>
+<body>
+    <span class="r">Redirecting... Please wait a second.</span>
+</body>
+</html>
