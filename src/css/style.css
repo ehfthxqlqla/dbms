@@ -75,6 +75,8 @@ body {
     font-size: larger;
     font-weight: bold;
     color: white;
+    transform: translateX(0px);
+    transition: .5s;
 }
 
 #tutorial li:hover {
@@ -128,6 +130,34 @@ body {
         0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247); }
 }
 
+.assertive-title {
+    text-align: center;
+    color: #ff2a2a;
+    animation-duration: 3s;
+    animation-name: asserTitle;
+    animation-iteration-count: infinite;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 35px;
+}
+
+@keyframes asserTitle {
+    0% { text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 19px #fff, 0 0 40px rgb(247, 247, 247),
+        0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247); }
+        
+    30% { text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 9px #fff, 0 0 20px rgb(247, 247, 247),
+        0 0 30px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 60px rgb(247, 247, 247), 0 0 75px rgb(247, 247, 247); }
+
+    50% { text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 10px rgb(247, 247, 247),
+        0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247), 0 0 10px rgb(247, 247, 247); } /* 얘가 가장 글로우가 희미할때 */
+
+    70% { text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 9px #fff, 0 0 20px rgb(247, 247, 247),
+        0 0 30px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 60px rgb(247, 247, 247), 0 0 75px rgb(247, 247, 247); }
+
+    100% { text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 19px #fff, 0 0 40px rgb(247, 247, 247),
+        0 0 80px rgb(247, 247, 247), 0 0 90px rgb(247, 247, 247), 0 0 100px rgb(247, 247, 247), 0 0 149px rgb(247, 247, 247); }
+}
+
 #copyright {
     color: #000;
     font-size: 20px;
@@ -147,6 +177,7 @@ body {
     border: 2px solid black;
     top: 280px;
     left: 60px;
+    z-index: 1;
 }
 
 .wifi-id-pw {
@@ -202,7 +233,7 @@ body {
 .email-popup {
     display: none;
     text-decoration: none;
-    padding-top: 3px;
+    padding-top: 15px;
     padding-left: 10px;
     width: 325px;
     height: 100px;
@@ -213,6 +244,7 @@ body {
     border: 2px solid black;
     top: 350px;
     left: 60px;
+    z-index: 1;
 }
 
 .email-id-pw {
@@ -228,4 +260,23 @@ body {
     cursor: pointer;
     width: 17px;
     height: 17px;
+}
+
+.copy-img-email {
+    cursor: pointer;
+    width: 13px;
+    height: 15px;
+}
+
+#email-copy1 {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#copy-email1 {
+    position: absolute;
+    top: 14px;
+    left: 238px;
+    display: none;
 }
