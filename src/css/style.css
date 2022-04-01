@@ -294,9 +294,3 @@ body {
     left: 238px;
     display: none;
 }
-
-/* 이 밑으로는 모바일을 위한 css가 들어있습니다. */
-
-@media (max-width: 768px) {
-    * { font-family: '맑은고딕'; }
-}
