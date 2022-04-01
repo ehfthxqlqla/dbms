@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동부중</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div id="loading">
+        <span id="loading-span">로딩중... 0%</span>
+        <img src="./images/bx_loader.gif" alt="로딩중..."class="loading-gif">
+        <progress value="1" max="100" class="loading-prog">0%</progress>
+    </div>
+
+    <div id="tutorial">
+        <h1 class="title">동부중학교</h1>
+        <ul>
+            <a href="./classroom.html">
+                <li>구글 클래스룸 들어가는법</li>
+            </a>
+
+            <a href="">
+                <li>구글 클래스룸 글 작성방법</li>
+            </a>
+
+            <a href="javascript:void(0)" id="school-wifi">
+                <li>학교 와이파이 비번</li>
+            </a>
+
+            <div class="wifi-popup">
+                1. 딱봐도 학교 와이파이인거 찾기
+                <br>
+                <span>2. ID : </span><input type="text" value="dongbums" class="wifi-id-pw" readonly id="input-pw-copy1"><img src="./images/copy.png" alt="복사" class="copy-text" id="copy-img-1" title="복사하려면 클릭하세요.">
+                <br>
+                <span>3. PW : </span><input type="text" value="123456" class="wifi-id-pw" readonly id="input-pw-copy2"><img src="./images/copy.png" alt="복사" class="copy-text" id="copy-img-2" title="복사하려면 클릭하세요.">
+                <br>
+                4. CA인증인가 뭔가 하는거 : 안 함 <img class="xbutton" src="./images/xbutton.png" alt="닫기">
+
+                <!-- <span>내 핫스팟은 그냥 <b>1학년 3반 핫스팟</b> 찾아서 연결</span> -->
+
+                <div class="copied" id="copy1">
+                    복사 완료!
+                </div>
+
+                <div class="copied" id="copy2">
+                    복사 완료!
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" id="emailpop">
+                <li>학교 구글 계정 이메일 주소</li>
+            </a>
+
+            <div class="email-popup">
+                1. 구글 로그인 창으로 들어가기
+                <br>
+                <span>2. 이메일 : </span>
+                <input type="text" class="email-copy" readonly id="email-copy1" value="22dbms103번호@dge.go.kr">
+                <img src="./images/copy.png" alt="복사" class="copy-img-email">
+                <br>
+                <span>3. 비밀번호 : 12345678</span><img class="xbutton1" src="./images/xbutton.png" alt="닫기">
+
+                <div class="copied" id="copy-email1">
+                    복사 완료!
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <span class="copyright">
+        © Copyright 2022 ~ 2025 ehfthxqlqla. (CCL BY-SA)
+        <br>
+        Front-End by ehfthxqlqla
+        <a href="./github.html" target="_blank" rel="noopener noreferrer" style="display: inline; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;"">Source Code</a>
+        <br>
+        <br>
+        <a href="./copyright.html">출처</a>
+    </span>
+</body>
+</html>
